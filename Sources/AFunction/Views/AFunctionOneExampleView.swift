@@ -38,6 +38,14 @@ public struct AFunctionOneExampleView: View {
         self.returningUnit = unitOfReturn
     }
 
+    public init(name: String, _ example: AFunction.ExampleArgs, precision: NumberFormatStyleConfiguration.Precision, unitOfReturn: AUnit?, instance: @escaping ([AValue]) throws -> AValue) {
+        self.name = name
+        self.instance = instance
+        self.args = example
+        self.precision = precision
+        self.returningUnit = unitOfReturn
+    }
+
     public init(func function: AFunction, precision: NumberFormatStyleConfiguration.Precision, exampleIndex: Int) {
         self.name = function.shortName
         self.instance = function.instance
