@@ -17,7 +17,7 @@ public struct AValueElementArrayView: View {
         if !value.isFirst {
             Text(", ")
         }
-        AValueAsArgumentView(value: value.value, precision: precision, unit: value.unit)
+        AValueAsArgumentView(value: value.value, precision: precision, unit: value.unit, name: value.name ?? "")
     }
 
     public init(value: AValueArrayElement, precision: NumberFormatStyleConfiguration.Precision) {

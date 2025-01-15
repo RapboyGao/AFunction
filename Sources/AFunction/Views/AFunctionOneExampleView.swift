@@ -39,7 +39,11 @@ public struct AFunctionOneExampleView: View {
     }
 
     public init(func function: AFunction, precision: NumberFormatStyleConfiguration.Precision, exampleIndex: Int) {
-        self.init(name: function.shortName, function.examples[exampleIndex].values, arguments: function.arguments, precision: precision, unitOfReturn: function.returnValue.unit, instance: function.instance)
+        self.name = function.shortName
+        self.instance = function.instance
+        self.args = function.examples[exampleIndex]
+        self.precision = precision
+        self.returningUnit = function.returnValue.unit
     }
 }
 

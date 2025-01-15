@@ -19,6 +19,7 @@ public extension AFunction {
             var valuesElements = [AValueArrayElement](values)
             for index in valuesElements.indices {
                 valuesElements[index].unit = arguments.getUnit(index: index)
+                valuesElements[index].name = arguments.get(index: index)?.name
             }
             self.valueElements = valuesElements
         }
