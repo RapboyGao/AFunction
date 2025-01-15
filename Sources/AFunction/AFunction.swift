@@ -7,10 +7,10 @@ public struct AFunction: Sendable, Identifiable, CustomStringConvertible {
     public let arguments: Arguments
     public let returnValue: Argument
     public let part: Part
-    public let examples: [ExampleArg]
+    public let examples: [ExampleArgs]
     public let instance: @Sendable ([AValue]) throws -> AValue
 
-    public init(id: Int, shortName: String, arguments: Arguments, returnValue: Argument, part: Part, examples: [ExampleArg], instance: @escaping @Sendable ([AValue]) throws -> AValue) {
+    public init(id: Int, shortName: String, arguments: Arguments, returnValue: Argument, part: Part, examples: [ExampleArgs], instance: @escaping @Sendable ([AValue]) throws -> AValue) {
         self.id = id
         self.shortName = shortName
         self.arguments = arguments

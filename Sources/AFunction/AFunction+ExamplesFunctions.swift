@@ -10,7 +10,7 @@ public extension AFunction {
         arguments: .finite([Argument(name: I18n.angleArgumentName, detail: I18n.angleArgumentDetail, type: .one(.number))]),
         returnValue: Argument(name: "result", detail: I18n.cosFunctionDescription, type: .one(.number)),
         part: .math,
-        examples: [ExampleArg([.number(0)]), ExampleArg([.number(Double.pi / 2)])],
+        examples: [ExampleArgs([.number(0)]), ExampleArgs([.number(Double.pi / 2)])],
         instance: { args in
             let angle = try args.number(at: 0)
             return .number(cos(angle))
@@ -23,7 +23,7 @@ public extension AFunction {
         arguments: .finite([Argument(name: I18n.angleArgumentName, detail: I18n.angleArgumentDetail, type: .one(.number))]),
         returnValue: Argument(name: "result", detail: I18n.sinFunctionDescription, type: .one(.number)),
         part: .math,
-        examples: [ExampleArg([.number(0)]), ExampleArg([.number(Double.pi / 2)])],
+        examples: [ExampleArgs([.number(0)]), ExampleArgs([.number(Double.pi / 2)])],
         instance: { args in
             let angle = try args.number(at: 0)
             return .number(sin(angle))
@@ -39,7 +39,7 @@ public extension AFunction {
         ]),
         returnValue: Argument(name: "result", detail: I18n.maxFunctionDescription, type: .one(.number)),
         part: .math,
-        examples: [ExampleArg([.number(1), .number(2)]), ExampleArg([.number(3), .number(2)])],
+        examples: [ExampleArgs([.number(1), .number(2)]), ExampleArgs([.number(3), .number(2)])],
         instance: { args in
             let value1 = try args.number(at: 0)
             let value2 = try args.number(at: 1)
@@ -57,8 +57,8 @@ public extension AFunction {
         returnValue: Argument(name: "result", detail: I18n.distanceFunctionDescription, type: .one(.number)),
         part: .geography,
         examples: [
-            ExampleArg([.location(latitude: 37.7749, longitude: -122.4194), .location(latitude: 34.0522, longitude: -118.2437)]),
-            ExampleArg([.location(latitude: 51.5074, longitude: -0.1278), .location(latitude: 48.8566, longitude: 2.3522)])
+            ExampleArgs([.location(latitude: 37.7749, longitude: -122.4194), .location(latitude: 34.0522, longitude: -118.2437)]),
+            ExampleArgs([.location(latitude: 51.5074, longitude: -0.1278), .location(latitude: 48.8566, longitude: 2.3522)])
         ],
         instance: { args in
             let loc1 = try args.location(at: 0)
@@ -79,8 +79,8 @@ public extension AFunction {
         returnValue: Argument(name: "Distance", detail: "Distance between two points", type: .one(.number)),
         part: .points,
         examples: [
-            ExampleArg([.point(x: 0, y: 0), .point(x: 3, y: 4)]),
-            ExampleArg([.point(x: 1, y: 1), .point(x: 4, y: 5)])
+            ExampleArgs([.point(x: 0, y: 0), .point(x: 3, y: 4)]),
+            ExampleArgs([.point(x: 1, y: 1), .point(x: 4, y: 5)])
         ],
         instance: { args in
             let point1 = try args.point(at: 0)

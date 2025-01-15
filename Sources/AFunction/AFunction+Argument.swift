@@ -10,13 +10,15 @@ public extension AFunction {
         public var type: ArgumentType
         public var constraint: ANumberConstraint
         public var unit: AUnit?
+        public var genericName: String?
 
-        public init(name: String, detail: String, type: ArgumentType, constraint: ANumberConstraint = .realNumber(.infiniteRange), unit: AUnit? = nil) {
+        public init(name: String, detail: String, type: ArgumentType, constraint: ANumberConstraint = .realNumber(.infiniteRange), unit: AUnit? = nil, genericName: String? = nil) {
             self.name = name
             self.detail = detail
             self.type = type
             self.constraint = constraint
             self.unit = unit
+            self.genericName = genericName
         }
     }
 }
