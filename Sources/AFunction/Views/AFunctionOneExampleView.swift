@@ -23,7 +23,7 @@ public struct AFunctionOneExampleView: View {
             }
             Text(") = ")
             if let result = result {
-                AValueAsArgumentView(value: result, precision: precision, unit: returningUnit)
+                AValueAsArgumentView(value: result, precision: precision, unit: returningUnit, name: name)
             } else {
                 Text("?")
             }
