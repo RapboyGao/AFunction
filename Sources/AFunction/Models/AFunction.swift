@@ -23,7 +23,21 @@ public struct AFunction: Sendable, Identifiable, CustomStringConvertible {
         self.arguments = arguments
         self.returnValue = returnValue
         self.part = part
-        self.examples = examples
+        self.examples = examples.map {
+            AFunction.ExampleArgs($0.values, arguments: arguments)
+        }
+        self.instance = instance
+    }
+
+    public init(id: Int, shortName: String, arguments: Arguments, returnValue: Argument, part: Part, _ exampleValues: [[AValue]], instance: @escaping @Sendable ([AValue]) throws -> AValue) {
+        self.id = id
+        self.shortName = shortName
+        self.arguments = arguments
+        self.returnValue = returnValue
+        self.part = part
+        self.examples = exampleValues.map {
+            AFunction.ExampleArgs($0, arguments: arguments)
+        }
         self.instance = instance
     }
 

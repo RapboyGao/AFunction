@@ -14,11 +14,49 @@ public extension AFunction {
 
         public init(name: String, detail: String, type: ArgumentType, constraint: ANumberConstraint = .realNumber(.infiniteRange), unit: AUnit? = nil, genericName: String? = nil) {
             self.name = name
-            self.introduction = detail
+            introduction = detail
             self.type = type
             self.constraint = constraint
             self.unit = unit
             self.genericName = genericName
         }
+    }
+}
+
+public extension AFunction.Argument {
+    static func number(name: String, detail: String, constraint: ANumberConstraint, unit: AUnit? = nil) -> AFunction.Argument {
+        Self(name: name, detail: detail, type: .one(.number), constraint: constraint, unit: unit)
+    }
+
+    static func point(name: String, detail: String, unit: AUnit? = nil) -> AFunction.Argument {
+        Self(name: name, detail: detail, type: .one(.point), unit: unit)
+    }
+
+    static func location(name: String, detail: String) -> AFunction.Argument {
+        Self(name: name, detail: detail, type: .one(.location))
+    }
+
+    static func string(name: String, detail: String) -> AFunction.Argument {
+        Self(name: name, detail: detail, type: .one(.string), unit: nil)
+    }
+
+    static func boolean(name: String, detail: String) -> AFunction.Argument {
+        Self(name: name, detail: detail, type: .one(.boolean), unit: nil)
+    }
+
+    static func groundWind(name: String, detail: String, unit: AUnit? = nil) -> AFunction.Argument {
+        Self(name: name, detail: detail, type: .one(.groundWind), unit: unit)
+    }
+
+    static func minutes(name: String, detail: String) -> AFunction.Argument {
+        Self(name: name, detail: detail, type: .one(.minutes), unit: nil)
+    }
+
+    static func calendar(name: String, detail: String) -> AFunction.Argument {
+        Self(name: name, detail: detail, type: .one(.calendar), unit: nil)
+    }
+
+    static func dateDifference(name: String, detail: String) -> AFunction.Argument {
+        Self(name: name, detail: detail, type: .one(.dateDifference), unit: nil)
     }
 }
