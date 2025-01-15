@@ -1,3 +1,5 @@
+import AUnit
+
 public extension AFunction {
     enum Arguments: Codable, Sendable, Hashable, CustomStringConvertible {
         case finite([Argument])
@@ -16,5 +18,27 @@ public extension AFunction {
                 return totalArray.joined(separator: ",")
             }
         }
+    }
+}
+
+public extension AFunction.Arguments {
+    func get(index: Int) -> AFunction.Argument? {
+        guard index >= 0 else { return nil }
+        switch self {
+        case .finite(let array):
+            guard index < array.count else { return nil }
+            return array[index]
+        case .withOptional(let array, let optionals):
+            let allArgs = array + optionals
+            guard index < allArgs.count else { return nil }
+            return allArgs[index]
+        case .withInfinite(let array, let infiniteArg):
+            guard index < array.count else { return infiniteArg }
+            return array[index]
+        }
+    }
+
+    func getUnit(index: Int) -> AUnit? {
+        get(index: index)?.unit
     }
 }

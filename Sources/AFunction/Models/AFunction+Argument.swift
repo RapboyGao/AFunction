@@ -5,7 +5,7 @@ public extension AFunction {
     struct Argument: Codable, Sendable, Hashable, Identifiable {
         public var id = UUID()
         public var name: String
-        public var detail: String
+        public var introduction: String
         // 可以接受的数据类型
         public var type: ArgumentType
         public var constraint: ANumberConstraint
@@ -14,7 +14,7 @@ public extension AFunction {
 
         public init(name: String, detail: String, type: ArgumentType, constraint: ANumberConstraint = .realNumber(.infiniteRange), unit: AUnit? = nil, genericName: String? = nil) {
             self.name = name
-            self.detail = detail
+            self.introduction = detail
             self.type = type
             self.constraint = constraint
             self.unit = unit
