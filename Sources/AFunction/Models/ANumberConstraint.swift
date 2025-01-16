@@ -1,10 +1,10 @@
 import Foundation
 
 public enum ANumberConstraint: Codable, Sendable, Hashable {
-    case range(RangeConstraint)
-    case integer(IntegerConstraint)
-    case realNumber(RealNumberConstraint)
-    case step(StepConstraint)
+    case range(RangeConstraint) // 区间约束
+    case integer(IntegerConstraint) // 整数约束
+    case realNumber(RealNumberConstraint) // 实数约束
+    case step(StepConstraint) // 步长约束
 
     var description: String {
         switch self {
@@ -164,7 +164,7 @@ public enum ANumberConstraint: Codable, Sendable, Hashable {
             case .realNumber:
                 return true
             case .rationalNumber:
-                return true // Assuming all numbers passed here are rational for simplicity
+                return true // 假设传入的所有数字都是有理数
             case .infiniteRange:
                 return true
             }
@@ -188,53 +188,53 @@ public enum ANumberConstraint: Codable, Sendable, Hashable {
 public extension ANumberConstraint {
     // 区间类型
     enum RangeConstraint: Codable, Sendable, Hashable {
-        case inclusive(min: Double, max: Double)
-        case exclusiveMinInclusiveMax(min: Double, max: Double)
-        case inclusiveMinExclusiveMax(min: Double, max: Double)
-        case exclusive(min: Double, max: Double)
-        case inclusiveWithStep(min: Double, max: Double, step: Double)
-        case exclusiveMinInclusiveMaxWithStep(min: Double, max: Double, step: Double)
-        case inclusiveMinExclusiveMaxWithStep(min: Double, max: Double, step: Double)
-        case exclusiveWithStep(min: Double, max: Double, step: Double)
-        case rangeExcluding(min: Double, max: Double, exclude: Double)
-        case rangeExcludingWithStep(min: Double, max: Double, exclude: Double, step: Double)
+        case inclusive(min: Double, max: Double) // 包含最小值和最大值
+        case exclusiveMinInclusiveMax(min: Double, max: Double) // 不包含最小值但包含最大值
+        case inclusiveMinExclusiveMax(min: Double, max: Double) // 包含最小值但不包含最大值
+        case exclusive(min: Double, max: Double) // 不包含最小值和最大值
+        case inclusiveWithStep(min: Double, max: Double, step: Double) // 包含最小值和最大值，且有步长
+        case exclusiveMinInclusiveMaxWithStep(min: Double, max: Double, step: Double) // 不包含最小值但包含最大值，且有步长
+        case inclusiveMinExclusiveMaxWithStep(min: Double, max: Double, step: Double) // 包含最小值但不包含最大值，且有步长
+        case exclusiveWithStep(min: Double, max: Double, step: Double) // 不包含最小值和最大值，且有步长
+        case rangeExcluding(min: Double, max: Double, exclude: Double) // 包含最小值和最大值，但排除某个值
+        case rangeExcludingWithStep(min: Double, max: Double, exclude: Double, step: Double) // 包含最小值和最大值，但排除某个值，且有步长
     }
 
     // 整数类型
     enum IntegerConstraint: Codable, Sendable, Hashable {
-        case inclusive(min: Int, max: Int)
-        case positive
-        case nonNegative
-        case negative
-        case nonPositive
-        case nonZero
-        case rangeExcluding(min: Int, max: Int, exclude: Int)
-        case singleValue(value: Int)
-        case naturalNumber
-        case evenNumber
-        case oddNumber
-        case integerSet(Set<Int>)
+        case inclusive(min: Int, max: Int) // 包含最小值和最大值
+        case positive // 正数
+        case nonNegative // 非负数
+        case negative // 负数
+        case nonPositive // 非正数
+        case nonZero // 非零
+        case rangeExcluding(min: Int, max: Int, exclude: Int) // 包含最小值和最大值，但排除某个值
+        case singleValue(value: Int) // 单个值
+        case naturalNumber // 自然数
+        case evenNumber // 偶数
+        case oddNumber // 奇数
+        case integerSet(Set<Int>) // 整数集合
     }
 
     // 实数类型
     enum RealNumberConstraint: Codable, Sendable, Hashable {
-        case positive
-        case nonNegative
-        case negative
-        case nonPositive
-        case nonZero
-        case singleValue(value: Double)
-        case realNumber
-        case rationalNumber
-        case infiniteRange
+        case positive // 正数
+        case nonNegative // 非负数
+        case negative // 负数
+        case nonPositive // 非正数
+        case nonZero // 非零
+        case singleValue(value: Double) // 单个值
+        case realNumber // 实数
+        case rationalNumber // 有理数
+        case infiniteRange // 无限区间
     }
 
     // 带步长的类型
     enum StepConstraint: Codable, Sendable, Hashable {
-        case positive(step: Double)
-        case nonNegative(step: Double)
-        case negative(step: Double)
-        case nonPositive(step: Double)
-        case nonZero(step: Double)
+        case positive(step: Double) // 正步长
+        case nonNegative(step: Double) // 非负步长
+        case negative(step: Double) // 负步长
+        case nonPositive(step: Double) // 非正步长
+        case nonZero(step: Double) // 非零步长
     }
 }
