@@ -10,10 +10,7 @@ public struct AFunctionOneExampleView: View {
     var args: AFunction.ExampleArgs
     var precision: NumberFormatStyleConfiguration.Precision
     var returningUnit: AUnit?
-
-    var result: AValue? {
-        try? instance(args.values)
-    }
+    var result: AValue?
 
     public var body: some View {
         AWrappingStack {
@@ -36,6 +33,7 @@ public struct AFunctionOneExampleView: View {
         self.args = AFunction.ExampleArgs(values, arguments: arguments)
         self.precision = precision
         self.returningUnit = unitOfReturn
+        self.result = try? instance(values)
     }
 
     public init(name: String, _ example: AFunction.ExampleArgs, precision: NumberFormatStyleConfiguration.Precision, unitOfReturn: AUnit?, instance: @escaping ([AValue]) throws -> AValue) {
@@ -44,6 +42,7 @@ public struct AFunctionOneExampleView: View {
         self.args = example
         self.precision = precision
         self.returningUnit = unitOfReturn
+        self.result = try? instance(example.values)
     }
 
     public init(func function: AFunction, precision: NumberFormatStyleConfiguration.Precision, exampleIndex: Int) {
@@ -52,6 +51,7 @@ public struct AFunctionOneExampleView: View {
         self.args = function.examples[exampleIndex]
         self.precision = precision
         self.returningUnit = function.returnValue.unit
+        self.result = try? function.instance(function.examples[exampleIndex].values)
     }
 }
 

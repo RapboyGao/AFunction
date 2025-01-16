@@ -1,3 +1,4 @@
+import AUnits
 import AValue
 import CoreLocation
 import Foundation
@@ -7,26 +8,28 @@ public extension AFunction {
     static let cosFunction = AFunction(
         id: 1,
         shortName: "cos",
-        arguments: .finite([Argument(name: I18n.angleArgumentName, detail: I18n.angleArgumentDetail, type: .one(.number))]),
+        arguments: .finite([.number(name: "angle", detail: "angle", constraint: .realNumber(.infiniteRange), unit: .degrees)]),
         returnValue: Argument(name: "result", detail: I18n.cosFunctionDescription, type: .one(.number)),
         part: .math,
-        examples: [ExampleArgs([.number(0)]), ExampleArgs([.number(Double.pi / 2)])],
+        examples: [ExampleArgs([60]), ExampleArgs([45]), ExampleArgs([90]), ExampleArgs([-60])],
         instance: { args in
             let angle = try args.number(at: 0)
-            return .number(cos(angle))
+            let someAngle = AAngle(value: angle, unit: .degrees)
+            return .number(someAngle.cos())
         }
     )
 
     static let sinFunction = AFunction(
         id: 2,
         shortName: "sin",
-        arguments: .finite([Argument(name: I18n.angleArgumentName, detail: I18n.angleArgumentDetail, type: .one(.number))]),
+        arguments: .finite([.number(name: "angle", detail: "angle", constraint: .realNumber(.infiniteRange), unit: .degrees)]),
         returnValue: Argument(name: "result", detail: I18n.sinFunctionDescription, type: .one(.number)),
         part: .math,
-        examples: [ExampleArgs([.number(0)]), ExampleArgs([.number(Double.pi / 2)])],
+        examples: [ExampleArgs([60]), ExampleArgs([45]), ExampleArgs([90]), ExampleArgs([-60])],
         instance: { args in
             let angle = try args.number(at: 0)
-            return .number(sin(angle))
+            let someAngle = AAngle(value: angle, unit: .degrees)
+            return .number(someAngle.sin())
         }
     )
 
@@ -80,7 +83,8 @@ public extension AFunction {
         part: .points,
         examples: [
             ExampleArgs([.point(x: 0, y: 0), .point(x: 3, y: 4)]),
-            ExampleArgs([.point(x: 1, y: 1), .point(x: 4, y: 5)])
+            ExampleArgs([.point(x: 1, y: 1), .point(x: 4, y: 5)]),
+            ExampleArgs([.point(x: -1, y: -1), .point(x: 10, y: 2)])
         ],
         instance: { args in
             let point1 = try args.point(at: 0)
