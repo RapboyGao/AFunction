@@ -26,7 +26,7 @@ public struct AArgumentTitleHStack: View {
             titleText
             if let unit = unit {
                 Menu {
-                    Label(unit.nameInMenu, systemImage: unit.unitType.symbol)
+                    Label(unit.nameInMenu, systemImage: unit.unitType.systemImage)
                 } label: {
                     Text(unit.shortName)
                         .font(.caption)
