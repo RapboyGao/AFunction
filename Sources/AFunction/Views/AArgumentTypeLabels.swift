@@ -2,7 +2,7 @@ import SwiftUI
 
 #if os(iOS)
 @available(iOS 16.0, *)
-public struct AArgumentTypeImages: View {
+public struct AArgumentTypeIconMenus: View {
     var argumentType: AFunction.ArgumentType
 
     public var body: some View {
@@ -41,13 +41,13 @@ public struct AArgumentTypeImages: View {
 #Preview {
     List {
         HStack {
-            AArgumentTypeImages(.anything)
+            AArgumentTypeIconMenus(.anything)
         }
         HStack {
-            AArgumentTypeImages(.collection([.minutes, .number, .boolean]))
+            AArgumentTypeIconMenus(.collection([.minutes, .number, .boolean]))
         }
         HStack {
-            AArgumentTypeImages(.one(.calendar))
+            AArgumentTypeIconMenus(.one(.calendar))
         }
     }
     .foregroundColor(.blue)
