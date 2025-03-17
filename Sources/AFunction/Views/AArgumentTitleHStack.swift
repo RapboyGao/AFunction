@@ -25,9 +25,12 @@ public struct AArgumentTitleHStack: View {
         HStack {
             titleText
             if let unit = unit {
-                Text(unit.shortName)
-                    .font(.caption2)
-                    .foregroundColor(.gray)
+                Menu {
+                    Label(unit.nameInMenu, systemImage: unit.unitType.symbol)
+                } label: {
+                    Text(unit.shortName)
+                        .font(.caption)
+                }
             }
             Spacer()
             if let genericName = genericName {
@@ -41,13 +44,15 @@ public struct AArgumentTitleHStack: View {
                             Label(someType.name, systemImage: someType.symbolName)
                         }
                     } label: {
-                        Text(genericName) +
+                        Text(array.count, format: .number)
+                            .foregroundColor(.gray)
+                            .font(.caption)
+                            +
                             Text(" *")
                             .foregroundColor(.gray)
-                            .font(.caption2) +
-                            Text(array.count, format: .number)
-                            .foregroundColor(.gray)
-                            .font(.caption2)
+                            .font(.caption)
+                            +
+                            Text(genericName)
                     }
                 case .one:
                     AArgumentTypeIconMenus(type)
