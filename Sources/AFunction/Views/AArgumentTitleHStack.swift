@@ -25,10 +25,18 @@ public struct AArgumentTitleHStack: View {
                     Text(genericName)
                         .foregroundColor(.accentColor)
                 case .collection(let array):
-                    Menu(genericName) {
+                    Menu {
                         ForEach(array) { someType in
                             Label(someType.name, systemImage: someType.symbolName)
                         }
+                    } label: {
+                        Text(genericName) +
+                            Text(" *")
+                            .foregroundColor(.gray)
+                            .font(.caption2) +
+                            Text(array.count, format: .number)
+                            .foregroundColor(.gray)
+                            .font(.caption2)
                     }
                 case .one:
                     AArgumentTypeIconMenus(type)

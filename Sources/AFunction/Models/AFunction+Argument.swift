@@ -64,7 +64,7 @@ public extension AFunction.Argument {
     static func generic(name: String, detail: String, genericName: String, unit: AUnit?, allowedTypes: [AValueType]) -> AFunction.Argument {
         Self(name: name, detail: detail, type: .collection(allowedTypes), unit: unit, genericName: genericName)
     }
-    
+
     static func generic(name: String, detail: String, genericName: String, unit: AUnit?) -> AFunction.Argument {
         Self(name: name, detail: detail, type: .anything, unit: unit, genericName: genericName)
     }
