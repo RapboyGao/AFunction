@@ -9,15 +9,13 @@ public extension AFunction {
         public var introduction: String
         // 可以接受的数据类型
         public var type: ArgumentType
-        public var constraint: ANumberConstraint
         public var unit: AUnit?
         public var genericName: String?
 
-        public init(name: String, detail: String, type: ArgumentType, constraint: ANumberConstraint = .realNumber(.infiniteRange), unit: AUnit? = nil, genericName: String? = nil) {
+        public init(name: String, detail: String, type: ArgumentType, unit: AUnit? = nil, genericName: String? = nil) {
             self.name = name
             introduction = detail
             self.type = type
-            self.constraint = constraint
             self.unit = unit
             self.genericName = genericName
         }
@@ -25,8 +23,8 @@ public extension AFunction {
 }
 
 public extension AFunction.Argument {
-    static func number(name: String, detail: String, constraint: ANumberConstraint, unit: AUnit? = nil) -> AFunction.Argument {
-        Self(name: name, detail: detail, type: .one(.number), constraint: constraint, unit: unit)
+    static func number(name: String, detail: String, unit: AUnit? = nil) -> AFunction.Argument {
+        Self(name: name, detail: detail, type: .one(.number), unit: unit)
     }
 
     static func point(name: String, detail: String, unit: AUnit? = nil) -> AFunction.Argument {

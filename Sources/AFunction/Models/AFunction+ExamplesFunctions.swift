@@ -8,7 +8,7 @@ public extension AFunction {
     static let cosFunction = AFunction(
         id: 1,
         shortName: "cos",
-        arguments: .finite([.number(name: "angle", detail: "angle", constraint: .realNumber(.infiniteRange), unit: .degrees)]),
+        arguments: .finite([.number(name: "angle", detail: "angle", unit: .degrees)]),
         returnValue: Argument(name: "result", detail: I18n.cosFunctionDescription, type: .one(.number)),
         part: .math,
         examples: [ExampleArgs([60]), ExampleArgs([45]), ExampleArgs([90]), ExampleArgs([-60])],
@@ -22,7 +22,7 @@ public extension AFunction {
     static let sinFunction = AFunction(
         id: 2,
         shortName: "sin",
-        arguments: .finite([.number(name: "angle", detail: "angle", constraint: .realNumber(.infiniteRange), unit: .degrees)]),
+        arguments: .finite([.number(name: "angle", detail: "angle", unit: .degrees)]),
         returnValue: Argument(name: "result", detail: I18n.sinFunctionDescription, type: .one(.number)),
         part: .math,
         examples: [ExampleArgs([60]), ExampleArgs([45]), ExampleArgs([90]), ExampleArgs([-60])],
@@ -57,7 +57,7 @@ public extension AFunction {
             Argument(name: I18n.location1ArgumentName, detail: I18n.location1ArgumentDetail, type: .one(.location)),
             Argument(name: I18n.location2ArgumentName, detail: I18n.location2ArgumentDetail, type: .one(.location))
         ]),
-        returnValue: .number(name: "Distance", detail: "Distance between 2 locations", constraint: .realNumber(.positive), unit: .meters),
+        returnValue: .number(name: "Distance", detail: "Distance between 2 locations", unit: .meters),
         part: .geography,
         examples: [
             ExampleArgs([.location(latitude: 37.7749, longitude: -122.4194), .location(latitude: 34.0522, longitude: -118.2437)]),
