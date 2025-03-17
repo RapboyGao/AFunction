@@ -45,9 +45,18 @@ public struct AFunctionSection: View {
 }
 
 @available(iOS 16.0, *)
+private struct Example: View {
+    @State private var isExpanded: Bool = false
+
+    var body: some View {
+        AFunctionSection(isExpanded: $isExpanded, function: .pointDistance)
+    }
+}
+
+@available(iOS 16.0, *)
 #Preview {
     List {
-        AFunctionSection(.pointDistance)
+        Example()
     }
 }
 
