@@ -1,0 +1,28 @@
+// Localizable.strings
+// 简体中文本地化
+
+"title.examples.name" = "示例";
+"cos_function_description" = "计算角度的余弦值（度）";
+"sin_function_description" = "计算角度的正弦值（度）";
+"max_function_description" = "返回两个数字中的最大值";
+"distance_function_description" = "计算两个坐标之间的地理距离";
+"function_description_format" = "%@函数详情";
+"angle_argument_name" = "角度";
+"angle_argument_detail" = "以度为单位的输入角度";
+"value1_argument_name" = "第一个值";
+"value1_argument_detail" = "用于比较的第一个数值输入";
+"value2_argument_name" = "第二个值";
+"value2_argument_detail" = "用于比较的第二个数值输入";
+"location1_argument_name" = "起始位置";
+"location1_argument_detail" = "初始地理坐标";
+"location2_argument_name" = "结束位置";
+"location2_argument_detail" = "目标地理坐标";
+"location_distance_argument_name" = "距离";
+"location_distance_argument_detail" = "以米为单位的地理间距";
+"point1_argument_name" = "起始点";
+"point1_argument_detail" = "第一个二维坐标点";
+"point2_argument_name" = "结束点";
+"point2_argument_detail" = "第二个二维坐标点";
+"distance_argument_name" = "距离";
+"distance_argument_detail" = "两点之间的欧几里得距离";
+"result_argument_name" = "结果";

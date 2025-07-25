@@ -16,7 +16,7 @@ public struct AFunctionSection: View {
                         Text("(")
                         Text(function.arguments.description)
                         Text(")")
-                        Text("= ")
+                        Text(" = ")
                         Text(function.returnValue.name)
                     }
                     .foregroundColor(.gray)

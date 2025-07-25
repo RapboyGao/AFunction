@@ -1,18 +1,25 @@
-// Localizable.strings
-// English localization
-
-"cos_function_description" = "Calculates the cosine of an angle";
-"sin_function_description" = "Calculates the sine of an angle";
-"max_function_description" = "Returns the maximum of two values";
-"distance_function_description" = "Calculates the distance between two locations";
-"function_description_format" = "Description for %@ function";
+"title.examples.name" = "Examples";
+"cos_function_description" = "Calculates the cosine of an angle in degrees";
+"sin_function_description" = "Calculates the sine of an angle in degrees";
+"max_function_description" = "Returns the maximum value of two numbers";
+"distance_function_description" = "Calculates geographical distance between two coordinates";
+"function_description_format" = "%@ function details";
 "angle_argument_name" = "Angle";
-"angle_argument_detail" = "The angle in degrees";
-"value1_argument_name" = "Value 1";
-"value1_argument_detail" = "The first value to compare";
-"value2_argument_name" = "Value 2";
-"value2_argument_detail" = "The second value to compare";
-"location1_argument_name" = "Location 1";
-"location1_argument_detail" = "The first location coordinate";
-"location2_argument_name" = "Location 2";
-"location2_argument_detail" = "The second location coordinate";
+"angle_argument_detail" = "Input angle measured in degrees";
+"value1_argument_name" = "First Value";
+"value1_argument_detail" = "First numeric input for comparison";
+"value2_argument_name" = "Second Value";
+"value2_argument_detail" = "Second numeric input for comparison";
+"location1_argument_name" = "Starting Location";
+"location1_argument_detail" = "Initial geographical coordinate";
+"location2_argument_name" = "Ending Location";
+"location2_argument_detail" = "Destination geographical coordinate";
+"location_distance_argument_name" = "Distance";
+"location_distance_argument_detail" = "Geographical separation in meters";
+"point1_argument_name" = "Starting Point";
+"point1_argument_detail" = "First 2D coordinate point";
+"point2_argument_name" = "Ending Point";
+"point2_argument_detail" = "Second 2D coordinate point";
+"distance_argument_name" = "Distance";
+"distance_argument_detail" = "Euclidean distance between two points";
+"result_argument_name" = "Result";
