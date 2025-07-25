@@ -1,0 +1,18 @@
+// Localizable.strings
+// English localization
+
+"cos_function_description" = "Calculates the cosine of an angle";
+"sin_function_description" = "Calculates the sine of an angle";
+"max_function_description" = "Returns the maximum of two values";
+"distance_function_description" = "Calculates the distance between two locations";
+"function_description_format" = "Description for %@ function";
+"angle_argument_name" = "Angle";
+"angle_argument_detail" = "The angle in degrees";
+"value1_argument_name" = "Value 1";
+"value1_argument_detail" = "The first value to compare";
+"value2_argument_name" = "Value 2";
+"value2_argument_detail" = "The second value to compare";
+"location1_argument_name" = "Location 1";
+"location1_argument_detail" = "The first location coordinate";
+"location2_argument_name" = "Location 2";
+"location2_argument_detail" = "The second location coordinate";

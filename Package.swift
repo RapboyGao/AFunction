@@ -24,6 +24,9 @@ let package = Package(
             dependencies: [
                 .product(name: "AValue", package: "AValue"),
                 .product(name: "AUnit", package: "AUnit"),
+            ],
+            resources: [
+                .process("Resources"),
             ]),
         .testTarget(
             name: "AFunctionTests",
