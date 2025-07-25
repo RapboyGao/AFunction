@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 #if os(iOS)
@@ -12,15 +11,17 @@ public struct AFunctionSection: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text(function.shortName)
                     .font(.title)
-                HStack(spacing: 0) {
-                    Text("(")
-                    Text(function.arguments.description)
-                    Text(")")
-                    Spacer()
-                    Text("= ")
-                    Text(function.returnValue.name)
+                ScrollView(.horizontal) {
+                    HStack(spacing: 0) {
+                        Text("(")
+                        Text(function.arguments.description)
+                        Text(")")
+                        Text("= ")
+                        Text(function.returnValue.name)
+                    }
+                    .foregroundColor(.gray)
                 }
-                .foregroundColor(.gray)
+                .scrollIndicators(.hidden)
             }
             AArgumentsContent(function.arguments)
             AArgumentView(argument: function.returnValue, finiteOpt: .finite)
@@ -45,18 +46,11 @@ public struct AFunctionSection: View {
 }
 
 @available(iOS 16.0, *)
-private struct Example: View {
-    @State private var isExpanded: Bool = false
-
-    var body: some View {
-        AFunctionSection(isExpanded: $isExpanded, function: .pointDistance)
-    }
-}
-
-@available(iOS 16.0, *)
 #Preview {
     List {
-        Example()
+        ForEach(AFunction.allCases) { someFunc in
+            AFunctionSection(someFunc)
+        }
     }
 }
 

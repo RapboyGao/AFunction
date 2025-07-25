@@ -3,10 +3,8 @@ import AValue
 import AViewUI
 import SwiftUI
 
+#if os(iOS)
 @available(iOS 16.0, *)
-@available(macOS, unavailable)
-@available(tvOS, unavailable)
-@available(watchOS, unavailable)
 public struct AFunctionAllExamplesView: View {
     var name: String
     var instance: ([AValue]) throws -> AValue
@@ -38,11 +36,10 @@ public struct AFunctionAllExamplesView: View {
 }
 
 @available(iOS 16.0, *)
-@available(macOS, unavailable)
-@available(tvOS, unavailable)
-@available(watchOS, unavailable)
 #Preview {
     List(AFunction.allCases) { someFunction in
         AFunctionAllExamplesView(func: someFunction, precision: .fractionLength(0 ... 5))
     }
 }
+
+#endif

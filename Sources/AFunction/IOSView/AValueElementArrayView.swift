@@ -3,10 +3,8 @@ import AValue
 import AViewUI
 import SwiftUI
 
+#if os(iOS)
 @available(iOS 16.0, *)
-@available(macOS, unavailable)
-@available(tvOS, unavailable)
-@available(watchOS, unavailable)
 public struct AValueElementArrayView: View {
     public var value: AValueArrayElement
     public var precision: NumberFormatStyleConfiguration.Precision
@@ -30,9 +28,6 @@ public struct AValueElementArrayView: View {
 }
 
 @available(iOS 16.0, *)
-@available(macOS, unavailable)
-@available(tvOS, unavailable)
-@available(watchOS, unavailable)
 #Preview {
     List {
         AValueElementArrayView(value: .init(id: 1, value: 35, isLast: false, unit: .meters), precision: .fractionLength(0 ... 5))
@@ -42,3 +37,5 @@ public struct AValueElementArrayView: View {
         AValueElementArrayView(value: .init(id: 0, value: .groundWind(limit: .b737), isLast: true, unit: .metersPerSecond), precision: .fractionLength(0 ... 5))
     }
 }
+
+#endif

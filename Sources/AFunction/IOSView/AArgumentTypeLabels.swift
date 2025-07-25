@@ -26,6 +26,7 @@ public struct AArgumentTypeIconMenus: View {
         case .one(let someType):
             Menu {
                 Label(someType.name, systemImage: someType.symbolName)
+                Text(someType.introduction)
             } label: {
                 Image(systemName: someType.symbolName)
             }

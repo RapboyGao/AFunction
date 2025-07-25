@@ -3,10 +3,8 @@ import AValue
 import AViewUI
 import SwiftUI
 
+#if os(iOS)
 @available(iOS 16.0, *)
-@available(macOS, unavailable)
-@available(tvOS, unavailable)
-@available(watchOS, unavailable)
 public struct AFunctionOneExampleView: View {
     var name: String
     var args: AFunction.ExampleArgs
@@ -55,11 +53,10 @@ public struct AFunctionOneExampleView: View {
 }
 
 @available(iOS 16.0, *)
-@available(macOS, unavailable)
-@available(tvOS, unavailable)
-@available(watchOS, unavailable)
 #Preview {
     List {
         AFunctionOneExampleView(func: .pointDistance, precision: .fractionLength(0 ... 5), exampleIndex: 1)
     }
 }
+
+#endif
