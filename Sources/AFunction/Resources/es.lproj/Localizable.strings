@@ -1,7 +1,9 @@
 "title.examples.name" = "Título de ejemplos";
 "cos_function_description" = "Función coseno: calcula el coseno del ángulo dado";
 "sin_function_description" = "Función seno: calcula el seno del ángulo dado";
+"tan_function_description" = "Función tangente: calcula la tangente del ángulo dado";
 "max_function_description" = "Función max: devuelve el valor mayor entre dos números";
+"min_function_description" = "Función min: devuelve el valor menor entre dos números";
 "distance_function_description" = "Función distancia: calcula la distancia entre dos posiciones";
 "function_description_format" = "Descripción de la función: %@";
 "angle_argument_name" = "Ángulo";
@@ -22,6 +24,12 @@
 "point2_argument_detail" = "Segundas coordenadas del punto (x,y)";
 "distance_argument_name" = "Distancia";
 "distance_argument_detail" = "Distancia directa entre dos puntos";
+"string_argument_name" = "Cadena";
+"string_argument_detail" = "Cadena de texto de entrada";
+"length_argument_name" = "Longitud";
+"length_argument_detail" = "Longitud de la cadena de texto";
+"sum_argument_name" = "Suma";
+"sum_argument_detail" = "Suma de dos números";
 "result_argument_name" = "Resultado";
 "math_part_short_name" = "Matemáticas";
 "math_part_introduction" = "Funciones matemáticas que incluyen trigonometría y cálculos";
@@ -31,3 +39,5 @@
 "points_part_introduction" = "Operaciones y cálculos de puntos de coordenadas 2D";
 "geography_part_short_name" = "Geografía";
 "geography_part_introduction" = "Cálculos de ubicación y distancia geográfica";
+"strings_part_short_name" = "Cadenas";
+"strings_part_introduction" = "Funciones para manipulación de cadenas de texto";

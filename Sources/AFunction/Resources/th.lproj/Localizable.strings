@@ -1,6 +1,9 @@
 "title.examples.name" = "ตัวอย่าง";
 "cos_function_description" = "คำนวณค่าคосাইนของมุมที่กำหนด";
-"sin_function_description" = "คำนวณค่าซাইนของมุมที่กำหนด";
+"sin_function_description" = "ฟังก์ชันไซน์: คำนวณไซน์ของมุมที่กำหนด";
+"tan_function_description" = "ฟังก์ชันแทนเจนต์: คำนวณแทนเจนต์ของมุมที่กำหนด";
+"max_function_description" = "ฟังก์ชันสูงสุด: คืนค่าที่มากที่สุดระหว่างสองจำนวน";
+"min_function_description" = "ฟังก์ชันต่ำสุด: คืนค่าที่น้อยที่สุดระหว่างสองจำนวน";
 "max_function_description" = "หาค่ามากที่สุดระหว่างสองค่า";
 "distance_function_description" = "คำนวณระยะทางระหว่างสองสถานที่";
 "function_description_format" = "คำอธิบายของฟังก์ชัน %@";
@@ -21,7 +24,13 @@
 "point2_argument_name" = "จุด 2";
 "point2_argument_detail" = "พิกัดจุดที่สองในระบบพิกัด笛卡尔";
 "distance_argument_name" = "ระยะทาง";
-"distance_argument_detail" = "ระยะทางระหว่างสองจุด";
+"distance_argument_detail" = "ระยะทางโดยตรงระหว่างสองจุด";
+"string_argument_name" = "สตริง";
+"string_argument_detail" = "สตริงข้อความนำเข้า";
+"length_argument_name" = "ความยาว";
+"length_argument_detail" = "ความยาวของสตริงข้อความ";
+"sum_argument_name" = "ผลรวม";
+"sum_argument_detail" = "ผลรวมของสองจำนวน";
 "result_argument_name" = "ผลลัพธ์";
 "math_part_short_name" = "คณิตศาสตร์";
 "math_part_introduction" = "ฟังก์ชันทางคณิตศาสตร์ที่รวมถึงตรีโกณมิติและการคำนวณ";
@@ -30,4 +39,6 @@
 "points_part_short_name" = "จุด";
 "points_part_introduction" = "การดำเนินการและการคำนวณจุดพิกัด 2 มิติ";
 "geography_part_short_name" = "ภูมิศาสตร์";
-"geography_part_introduction" = "การคำนวณตำแหน่งทางภูมิศาสตร์และระยะทาง";
+"geography_part_introduction" = "การคำนวณตำแหน่งและระยะทางทางภูมิศาสตร์";
+"strings_part_short_name" = "สตริง";
+"strings_part_introduction" = "ฟังก์ชันสำหรับการจัดการสตริงข้อความ";

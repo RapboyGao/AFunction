@@ -1,7 +1,9 @@
 "title.examples.name" = "Beispiele";
 "cos_function_description" = "Berechnet den Kosinus eines gegebenen Winkels";
 "sin_function_description" = "Berechnet den Sinus eines gegebenen Winkels";
+"tan_function_description" = "Berechnet den Tangens eines gegebenen Winkels";
 "max_function_description" = "Findet den maximalen Wert zwischen zwei Zahlen";
+"min_function_description" = "Findet den minimalen Wert zwischen zwei Zahlen";
 "distance_function_description" = "Berechnet die Distanz zwischen zwei Orten";
 "function_description_format" = "Beschreibung der Funktion %@";
 "angle_argument_name" = "Winkel";
@@ -22,6 +24,12 @@
 "point2_argument_detail" = "Zweite Koordinate im kartesischen System";
 "distance_argument_name" = "Distanz";
 "distance_argument_detail" = "Distanz zwischen zwei Punkten";
+"string_argument_name" = "Zeichenkette";
+"string_argument_detail" = "Eingabezeichenkette für die Verarbeitung";
+"length_argument_name" = "Länge";
+"length_argument_detail" = "Länge der Zeichenkette";
+"sum_argument_name" = "Summe";
+"sum_argument_detail" = "Summe von zwei Zahlen";
 "result_argument_name" = "Ergebnis";
 "math_part_short_name" = "Mathematik";
 "math_part_introduction" = "Mathematische Funktionen einschließlich Trigonometrie und Berechnungen";
@@ -31,3 +39,5 @@
 "points_part_introduction" = "Operationen und Berechnungen mit 2D-Koordinatenpunkten";
 "geography_part_short_name" = "Geographie";
 "geography_part_introduction" = "Geographische Standort- und Entfernungsberechnungen";
+"strings_part_short_name" = "Zeichenketten";
+"strings_part_introduction" = "Funktionen zur Verarbeitung und Manipulation von Zeichenketten";

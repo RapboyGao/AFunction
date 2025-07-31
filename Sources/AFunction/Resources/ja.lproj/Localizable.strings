@@ -1,7 +1,9 @@
 "title.examples.name" = "例題タイトル";
 "cos_function_description" = "余弦関数：指定された角度の余弦値を計算";
-"sin_function_description" = "正弦関数：指定された角度の正弦値を計算";
-"max_function_description" = "最大関数：二つの数値のうち大きい方を返す";
+"sin_function_description" = "サイン関数：与えられた角度のサインを計算します";
+"tan_function_description" = "タンジェント関数：与えられた角度のタンジェントを計算します";
+"max_function_description" = "最大関数：2つの数値の中で最大の値を返します";
+"min_function_description" = "最小関数：2つの数値の中で最小の値を返します";
 "distance_function_description" = "距離関数：二つの位置間の距離を計算";
 "function_description_format" = "関数説明：%@";
 "angle_argument_name" = "角度";
@@ -21,7 +23,13 @@
 "point2_argument_name" = "ポイント2";
 "point2_argument_detail" = "二番目のポイント座標(x,y)";
 "distance_argument_name" = "距離";
-"distance_argument_detail" = "二点間の直線距離";
+"distance_argument_detail" = "2点間の直接距離";
+"string_argument_name" = "文字列";
+"string_argument_detail" = "入力テキスト文字列";
+"length_argument_name" = "長さ";
+"length_argument_detail" = "文字列の長さ";
+"sum_argument_name" = "合計";
+"sum_argument_detail" = "2つの数値の合計";
 "result_argument_name" = "結果";
 "math_part_short_name" = "数学";
 "math_part_introduction" = "三角関数と計算を含む数学関数";
@@ -30,4 +38,6 @@
 "points_part_short_name" = "ポイント";
 "points_part_introduction" = "2D座標点の操作と計算";
 "geography_part_short_name" = "地理";
-"geography_part_introduction" = "地理位置と距離計算";
+"geography_part_introduction" = "地理的位置と距離の計算";
+"strings_part_short_name" = "文字列";
+"strings_part_introduction" = "文字列操作関数";

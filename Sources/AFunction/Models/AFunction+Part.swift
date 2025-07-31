@@ -1,12 +1,28 @@
 import AUnit
 import Foundation
 
-public extension AFunction {
-    enum Part: Codable, Sendable, Hashable {
+extension AFunction {
+    public enum Part: Codable, Sendable, Hashable, CaseIterable {
         case math
         case airData
         case points
         case geography
+        case strings
+
+        public var systemImage: String {
+            switch self {
+            case .math:
+                return "angle"
+            case .airData:
+                return "airplane"
+            case .points:
+                return "chart.xyaxis.line"
+            case .geography:
+                return "globe.desk"
+            case .strings:
+                return "textformat"
+            }
+        }
 
         /// 本地化的短名称
         public var shortName: String {
@@ -19,6 +35,8 @@ public extension AFunction {
                 return I18n.pointsPartShortName
             case .geography:
                 return I18n.geographyPartShortName
+            case .strings:
+                return I18n.stringsPartShortName
             }
         }
 
@@ -33,6 +51,8 @@ public extension AFunction {
                 return I18n.pointsPartIntroduction
             case .geography:
                 return I18n.geographyPartIntroduction
+            case .strings:
+                return I18n.stringsPartIntroduction
             }
         }
     }

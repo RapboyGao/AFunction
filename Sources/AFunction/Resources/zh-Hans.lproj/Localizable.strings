@@ -34,3 +34,13 @@
 "points_part_introduction" = "二维坐标点的操作和计算";
 "geography_part_short_name" = "地理";
 "geography_part_introduction" = "地理位置和距离计算";
+"tan_function_description" = "计算角度的正切值";
+"min_function_description" = "返回两个值中的最小值";
+"string_argument_name" = "字符串";
+"string_argument_detail" = "输入字符串";
+"length_argument_name" = "长度";
+"length_argument_detail" = "字符串的长度";
+"sum_argument_name" = "和";
+"sum_argument_detail" = "两个数字的和";
+"strings_part_short_name" = "字符串";
+"strings_part_introduction" = "字符串操作函数";

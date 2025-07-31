@@ -10,8 +10,12 @@ enum I18n {
         "cos_function_description", bundle: .module, comment: "Description of cosine function")
     static let sinFunctionDescription = NSLocalizedString(
         "sin_function_description", bundle: .module, comment: "Description of sine function")
+    static let tanFunctionDescription = NSLocalizedString(
+        "tan_function_description", bundle: .module, comment: "Description of tangent function")
     static let maxFunctionDescription = NSLocalizedString(
         "max_function_description", bundle: .module, comment: "Description of max function")
+    static let minFunctionDescription = NSLocalizedString(
+        "min_function_description", bundle: .module, comment: "Description of min function")
     static let distanceFunctionDescription = NSLocalizedString(
         "distance_function_description", bundle: .module,
         comment: "Description of distance function")
@@ -72,7 +76,18 @@ enum I18n {
         "distance_argument_name", bundle: .module, comment: "Name for distance argument")
     static let distanceArgumentDetail = NSLocalizedString(
         "distance_argument_detail", bundle: .module, comment: "Detail for distance argument")
-
+    static let stringArgumentName = NSLocalizedString(
+        "string_argument_name", bundle: .module, comment: "Name for string argument")
+    static let stringArgumentDetail = NSLocalizedString(
+        "string_argument_detail", bundle: .module, comment: "Detail for string argument")
+    static let lengthArgumentName = NSLocalizedString(
+        "length_argument_name", bundle: .module, comment: "Name for length argument")
+    static let lengthArgumentDetail = NSLocalizedString(
+        "length_argument_detail", bundle: .module, comment: "Detail for length argument")
+    static let sumArgumentName = NSLocalizedString(
+        "sum_argument_name", bundle: .module, comment: "Name for sum argument")
+    static let sumArgumentDetail = NSLocalizedString(
+        "sum_argument_detail", bundle: .module, comment: "Detail for sum argument")
     static let resultArgumentName = NSLocalizedString(
         "result_argument_name", bundle: .module, comment: "Name for result argument")
 
@@ -88,4 +103,6 @@ enum I18n {
 
     static let geographyPartShortName = NSLocalizedString("geography_part_short_name", bundle: .module, comment: "Short name for geography part")
     static let geographyPartIntroduction = NSLocalizedString("geography_part_introduction", bundle: .module, comment: "Introduction for geography part")
+    static let stringsPartShortName = NSLocalizedString("strings_part_short_name", bundle: .module, comment: "Short name for strings part")
+    static let stringsPartIntroduction = NSLocalizedString("strings_part_introduction", bundle: .module, comment: "Introduction for strings part")
 }

@@ -31,3 +31,13 @@
 "points_part_introduction" = "2D coordinate point operations and calculations";
 "geography_part_short_name" = "Geography";
 "geography_part_introduction" = "Geographical location and distance calculations";
+"tan_function_description" = "Calculates the tangent of an angle";
+"min_function_description" = "Returns the minimum of two values";
+"string_argument_name" = "String";
+"string_argument_detail" = "The input string";
+"length_argument_name" = "Length";
+"length_argument_detail" = "The length of the string";
+"sum_argument_name" = "Sum";
+"sum_argument_detail" = "The sum of two numbers";
+"strings_part_short_name" = "Strings";
+"strings_part_introduction" = "Functions for string manipulation";

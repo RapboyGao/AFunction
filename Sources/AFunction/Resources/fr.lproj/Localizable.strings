@@ -1,7 +1,9 @@
 "title.examples.name" = "Titre des exemples";
 "cos_function_description" = "Fonction cosinus: calcule le cosinus de l'angle donné";
-"sin_function_description" = "Fonction sinus: calcule le sinus de l'angle donné";
-"max_function_description" = "Fonction max: retourne la plus grande valeur entre deux nombres";
+"sin_function_description" = "Fonction sinus : calcule le sinus de l'angle donné";
+"tan_function_description" = "Fonction tangente : calcule la tangente de l'angle donné";
+"max_function_description" = "Fonction max : renvoie la valeur la plus grande entre deux nombres";
+"min_function_description" = "Fonction min : renvoie la valeur la plus petite entre deux nombres";
 "distance_function_description" = "Fonction distance: calcule la distance entre deux positions";
 "function_description_format" = "Description de la fonction: %@";
 "angle_argument_name" = "Angle";
@@ -21,7 +23,13 @@
 "point2_argument_name" = "Point 2";
 "point2_argument_detail" = "Deuxième coordonnées du point (x,y)";
 "distance_argument_name" = "Distance";
-"distance_argument_detail" = "Distance droite entre deux points";
+"distance_argument_detail" = "Distance directe entre deux points";
+"string_argument_name" = "Chaîne";
+"string_argument_detail" = "Chaîne de texte d'entrée";
+"length_argument_name" = "Longueur";
+"length_argument_detail" = "Longueur de la chaîne de texte";
+"sum_argument_name" = "Somme";
+"sum_argument_detail" = "Somme de deux nombres";
 "result_argument_name" = "Résultat";
 "math_part_short_name" = "Mathématiques";
 "math_part_introduction" = "Fonctions mathématiques incluant trigonométrie et calculs";
@@ -31,3 +39,5 @@
 "points_part_introduction" = "Opérations et calculs de points de coordonnées 2D";
 "geography_part_short_name" = "Géographie";
 "geography_part_introduction" = "Calculs de position et de distance géographique";
+"strings_part_short_name" = "Chaînes";
+"strings_part_introduction" = "Fonctions de manipulation de chaînes de texte";

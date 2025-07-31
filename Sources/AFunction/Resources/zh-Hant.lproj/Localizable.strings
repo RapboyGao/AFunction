@@ -1,7 +1,9 @@
 "title.examples.name" = "範例標題";
 "cos_function_description" = "餘弦函數：計算給定角度的餘弦值";
 "sin_function_description" = "正弦函數：計算給定角度的正弦值";
-"max_function_description" = "最大值函數：返回兩個數中的較大值";
+"tan_function_description" = "正切函數：計算給定角度的正切值";
+"max_function_description" = "最大值函數：返回兩個數值中的最大值";
+"min_function_description" = "最小值函數：返回兩個數值中的最小值";
 "distance_function_description" = "距離函數：計算兩個位置之間的距離";
 "function_description_format" = "函數描述：%@";
 "angle_argument_name" = "角度";
@@ -21,7 +23,13 @@
 "point2_argument_name" = "點2";
 "point2_argument_detail" = "第二個點坐標(x,y)";
 "distance_argument_name" = "距離";
-"distance_argument_detail" = "兩點之間的直線距離";
+"distance_argument_detail" = "兩點之間的直接距離";
+"string_argument_name" = "字串";
+"string_argument_detail" = "輸入文字字串";
+"length_argument_name" = "長度";
+"length_argument_detail" = "字串的長度";
+"sum_argument_name" = "總和";
+"sum_argument_detail" = "兩個數字的總和";
 "result_argument_name" = "結果";
 "math_part_short_name" = "數學";
 "math_part_introduction" = "包含三角函數和計算的數學函數";
@@ -30,4 +38,6 @@
 "points_part_short_name" = "點";
 "points_part_introduction" = "二維坐標點的操作和計算";
 "geography_part_short_name" = "地理";
-"geography_part_introduction" = "地理位置和距離計算";
+"geography_part_introduction" = "地理位址和距離計算";
+"strings_part_short_name" = "字串";
+"strings_part_introduction" = "字串操作函數";

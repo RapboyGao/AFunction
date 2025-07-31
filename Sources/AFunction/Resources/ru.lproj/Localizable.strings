@@ -1,7 +1,9 @@
 "title.examples.name" = "Примеры";
 "cos_function_description" = "Вычисляет косинус заданного угла";
-"sin_function_description" = "Вычисляет синус заданного угла";
-"max_function_description" = "Находит максимальное значение между двумя числами";
+"sin_function_description" = "Функция синуса: вычисляет синус заданного угла";
+"tan_function_description" = "Функция тангенса: вычисляет тангенс заданного угла";
+"max_function_description" = "Функция максимума: возвращает наибольшее значение из двух чисел";
+"min_function_description" = "Функция минимума: возвращает наименьшее значение из двух чисел";
 "distance_function_description" = "Вычисляет расстояние между двумя точками";
 "function_description_format" = "Описание функции %@";
 "angle_argument_name" = "Угол";
@@ -21,7 +23,13 @@
 "point2_argument_name" = "Точка 2";
 "point2_argument_detail" = "Вторая координата в декартовой системе";
 "distance_argument_name" = "Расстояние";
-"distance_argument_detail" = "Расстояние между двумя точками";
+"distance_argument_detail" = "Прямое расстояние между двумя точками";
+"string_argument_name" = "Строка";
+"string_argument_detail" = "Входная текстовая строка";
+"length_argument_name" = "Длина";
+"length_argument_detail" = "Длина текстовой строки";
+"sum_argument_name" = "Сумма";
+"sum_argument_detail" = "Сумма двух чисел";
 "result_argument_name" = "Результат";
 "math_part_short_name" = "Математика";
 "math_part_introduction" = "Математические функции, включая тригонометрию и вычисления";
@@ -30,4 +38,6 @@
 "points_part_short_name" = "Точки";
 "points_part_introduction" = "Операции и вычисления с 2D координатными точками";
 "geography_part_short_name" = "География";
-"geography_part_introduction" = "Вычисления географического положения и расстояния";
+"geography_part_introduction" = "Расчеты географического положения и расстояния";
+"strings_part_short_name" = "Строки";
+"strings_part_introduction" = "Функции для манипулирования текстовыми строками";
