@@ -23,3 +23,11 @@
 "distance_argument_name" = "距離";
 "distance_argument_detail" = "兩點之間的直線距離";
 "result_argument_name" = "結果";
+"math_part_short_name" = "數學";
+"math_part_introduction" = "包含三角函數和計算的數學函數";
+"air_data_part_short_name" = "航空數據";
+"air_data_part_introduction" = "與航空相關的數據處理函數";
+"points_part_short_name" = "點";
+"points_part_introduction" = "二維坐標點的操作和計算";
+"geography_part_short_name" = "地理";
+"geography_part_introduction" = "地理位置和距離計算";

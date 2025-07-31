@@ -23,3 +23,11 @@
 "distance_argument_name" = "거리";
 "distance_argument_detail" = "두 점 사이의 직선 거리";
 "result_argument_name" = "결과";
+"math_part_short_name" = "수학";
+"math_part_introduction" = "삼각 함수 및 계산을 포함한 수학 함수";
+"air_data_part_short_name" = "항공 데이터";
+"air_data_part_introduction" = "항공 관련 데이터 처리 함수";
+"points_part_short_name" = "점";
+"points_part_introduction" = "2D 좌표점 작업 및 계산";
+"geography_part_short_name" = "지리";
+"geography_part_introduction" = "지리적 위치 및 거리 계산";

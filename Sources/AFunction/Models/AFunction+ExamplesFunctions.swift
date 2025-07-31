@@ -118,6 +118,85 @@ extension AFunction {
             return .number(distance)
         }
     )
+
+    public static let tanFunction = AFunction(
+        id: 6,
+        shortName: "tan",
+        arguments: .finite([
+            .number(name: I18n.angleArgumentName, detail: I18n.angleArgumentDetail, unit: .degrees)
+        ]),
+        returnValue: Argument(
+            name: I18n.resultArgumentName, detail: I18n.tanFunctionDescription, type: .one(.number)),
+        part: .math,
+        examples: [ExampleArgs([0]), ExampleArgs([45]), ExampleArgs([60]), ExampleArgs([30])],
+        instance: { args in
+            let angle = try args.number(at: 0)
+            let someAngle = AAngle(value: angle, unit: .degrees)
+            return .number(someAngle.tan())
+        }
+    )
+
+    public static let minFunction = AFunction(
+        id: 7,
+        shortName: "min",
+        arguments: .finite([
+            Argument(
+                name: I18n.value1ArgumentName, detail: I18n.value1ArgumentDetail,
+                type: .one(.number)),
+            Argument(
+                name: I18n.value2ArgumentName, detail: I18n.value2ArgumentDetail,
+                type: .one(.number)),
+        ]),
+        returnValue: Argument(
+            name: "result", detail: I18n.minFunctionDescription, type: .one(.number)),
+        part: .math,
+        examples: [ExampleArgs([.number(1), .number(2)]), ExampleArgs([.number(3), .number(2)])],
+        instance: { args in
+            let value1 = try args.number(at: 0)
+            let value2 = try args.number(at: 1)
+            return .number(min(value1, value2))
+        }
+    )
+
+    public static let stringLengthFunction = AFunction(
+        id: 8,
+        shortName: "stringLength",
+        arguments: .finite([
+            Argument(
+                name: I18n.stringArgumentName, detail: I18n.stringArgumentDetail,
+                type: .one(.string)),
+        ]),
+        returnValue: Argument(
+            name: I18n.lengthArgumentName, detail: I18n.lengthArgumentDetail, type: .one(.number)),
+        part: .strings,
+        examples: [ExampleArgs([.string("")]), ExampleArgs([.string("hello")]), ExampleArgs([.string("AFunction")])],
+        instance: { args in
+            let str = try args.string(at: 0)
+            return .number(Double(str.count))
+        }
+    )
+
+    public static let addFunction = AFunction(
+        id: 9,
+        shortName: "add",
+        arguments: .finite([
+            Argument(
+                name: I18n.value1ArgumentName, detail: I18n.value1ArgumentDetail,
+                type: .one(.number)),
+            Argument(
+                name: I18n.value2ArgumentName, detail: I18n.value2ArgumentDetail,
+                type: .one(.number)),
+        ]),
+        returnValue: Argument(
+            name: I18n.sumArgumentName, detail: I18n.sumArgumentDetail, type: .one(.number)),
+        part: .math,
+        examples: [ExampleArgs([.number(2), .number(3)]), ExampleArgs([.number(-1), .number(5)]), ExampleArgs([.number(0), .number(0)])],
+        instance: { args in
+            let value1 = try args.number(at: 0)
+            let value2 = try args.number(at: 1)
+            return .number(value1 + value2)
+        }
+    )
 }
 
 // MARK: - All Cases
@@ -130,6 +209,10 @@ extension AFunction {
             .maxFunction,
             .distanceFunction,
             .pointDistance,
+            .tanFunction,
+            .minFunction,
+            .stringLengthFunction,
+            .addFunction,
             // 将其他函数添加到此数组中
         ]
     }

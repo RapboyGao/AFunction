@@ -26,3 +26,11 @@
 "distance_argument_name" = "距离";
 "distance_argument_detail" = "两点之间的欧几里得距离";
 "result_argument_name" = "结果";
+"math_part_short_name" = "数学";
+"math_part_introduction" = "包含三角函数和基础计算的数学函数";
+"air_data_part_short_name" = "航空数据";
+"air_data_part_introduction" = "与航空相关的数据处理函数";
+"points_part_short_name" = "点";
+"points_part_introduction" = "二维坐标点的操作和计算";
+"geography_part_short_name" = "地理";
+"geography_part_introduction" = "地理位置和距离计算";

@@ -75,4 +75,17 @@ enum I18n {
 
     static let resultArgumentName = NSLocalizedString(
         "result_argument_name", bundle: .module, comment: "Name for result argument")
+
+    // Part localization strings
+    static let mathPartShortName = NSLocalizedString("math_part_short_name", bundle: .module, comment: "Short name for math part")
+    static let mathPartIntroduction = NSLocalizedString("math_part_introduction", bundle: .module, comment: "Introduction for math part")
+
+    static let airDataPartShortName = NSLocalizedString("air_data_part_short_name", bundle: .module, comment: "Short name for air data part")
+    static let airDataPartIntroduction = NSLocalizedString("air_data_part_introduction", bundle: .module, comment: "Introduction for air data part")
+
+    static let pointsPartShortName = NSLocalizedString("points_part_short_name", bundle: .module, comment: "Short name for points part")
+    static let pointsPartIntroduction = NSLocalizedString("points_part_introduction", bundle: .module, comment: "Introduction for points part")
+
+    static let geographyPartShortName = NSLocalizedString("geography_part_short_name", bundle: .module, comment: "Short name for geography part")
+    static let geographyPartIntroduction = NSLocalizedString("geography_part_introduction", bundle: .module, comment: "Introduction for geography part")
 }

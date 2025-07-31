@@ -23,3 +23,11 @@
 "distance_argument_name" = "距離";
 "distance_argument_detail" = "二点間の直線距離";
 "result_argument_name" = "結果";
+"math_part_short_name" = "数学";
+"math_part_introduction" = "三角関数と計算を含む数学関数";
+"air_data_part_short_name" = "航空データ";
+"air_data_part_introduction" = "航空関連データ処理関数";
+"points_part_short_name" = "ポイント";
+"points_part_introduction" = "2D座標点の操作と計算";
+"geography_part_short_name" = "地理";
+"geography_part_introduction" = "地理位置と距離計算";

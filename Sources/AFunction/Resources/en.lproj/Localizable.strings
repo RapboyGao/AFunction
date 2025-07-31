@@ -23,3 +23,11 @@
 "distance_argument_name" = "Distance";
 "distance_argument_detail" = "Euclidean distance between two points";
 "result_argument_name" = "Result";
+"math_part_short_name" = "Math";
+"math_part_introduction" = "Mathematical functions including trigonometry and calculations";
+"air_data_part_short_name" = "Air Data";
+"air_data_part_introduction" = "Aviation-related data processing functions";
+"points_part_short_name" = "Points";
+"points_part_introduction" = "2D coordinate point operations and calculations";
+"geography_part_short_name" = "Geography";
+"geography_part_introduction" = "Geographical location and distance calculations";

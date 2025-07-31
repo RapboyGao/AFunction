@@ -23,3 +23,11 @@
 "distance_argument_name" = "ระยะทาง";
 "distance_argument_detail" = "ระยะทางระหว่างสองจุด";
 "result_argument_name" = "ผลลัพธ์";
+"math_part_short_name" = "คณิตศาสตร์";
+"math_part_introduction" = "ฟังก์ชันทางคณิตศาสตร์ที่รวมถึงตรีโกณมิติและการคำนวณ";
+"air_data_part_short_name" = "ข้อมูลทางอากาศ";
+"air_data_part_introduction" = "ฟังก์ชันประมวลผลข้อมูลที่เกี่ยวข้องกับอากาศยาน";
+"points_part_short_name" = "จุด";
+"points_part_introduction" = "การดำเนินการและการคำนวณจุดพิกัด 2 มิติ";
+"geography_part_short_name" = "ภูมิศาสตร์";
+"geography_part_introduction" = "การคำนวณตำแหน่งทางภูมิศาสตร์และระยะทาง";

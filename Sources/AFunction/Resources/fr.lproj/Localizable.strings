@@ -23,3 +23,11 @@
 "distance_argument_name" = "Distance";
 "distance_argument_detail" = "Distance droite entre deux points";
 "result_argument_name" = "Résultat";
+"math_part_short_name" = "Mathématiques";
+"math_part_introduction" = "Fonctions mathématiques incluant trigonométrie et calculs";
+"air_data_part_short_name" = "Données Aériennes";
+"air_data_part_introduction" = "Fonctions de traitement de données liées à l'aviation";
+"points_part_short_name" = "Points";
+"points_part_introduction" = "Opérations et calculs de points de coordonnées 2D";
+"geography_part_short_name" = "Géographie";
+"geography_part_introduction" = "Calculs de position et de distance géographique";

@@ -23,3 +23,11 @@
 "distance_argument_name" = "Расстояние";
 "distance_argument_detail" = "Расстояние между двумя точками";
 "result_argument_name" = "Результат";
+"math_part_short_name" = "Математика";
+"math_part_introduction" = "Математические функции, включая тригонометрию и вычисления";
+"air_data_part_short_name" = "Авиационные данные";
+"air_data_part_introduction" = "Функции обработки авиационных данных";
+"points_part_short_name" = "Точки";
+"points_part_introduction" = "Операции и вычисления с 2D координатными точками";
+"geography_part_short_name" = "География";
+"geography_part_introduction" = "Вычисления географического положения и расстояния";
