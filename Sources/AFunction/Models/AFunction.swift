@@ -42,6 +42,6 @@ public struct AFunction: Sendable, Identifiable, CustomStringConvertible {
     }
 
     public var description: String {
-        "" + arguments.description + ":" + returnValue.name
+        shortName + "(" + arguments.description + "): " + returnValue.name
     }
 }

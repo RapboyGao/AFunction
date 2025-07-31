@@ -7,7 +7,7 @@ public struct AFunctionSection: View {
     var function: AFunction
 
     public var body: some View {
-        Section(function.shortName) {
+        Section {
             VStack(alignment: .leading, spacing: 10) {
                 Text(function.shortName)
                     .font(.title)
@@ -30,6 +30,10 @@ public struct AFunctionSection: View {
             } label: {
                 Text("Examples")
             }
+        } header: {
+            Text(function.shortName)
+        } footer: {
+            Text(function.description)
         }
     }
 
